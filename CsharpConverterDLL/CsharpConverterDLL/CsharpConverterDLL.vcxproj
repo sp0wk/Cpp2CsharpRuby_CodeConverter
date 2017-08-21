@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{884CA827-9A53-4D1A-A4C1-C64AAD01FB41}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ConverterDLL</RootNamespace>
+    <ProjectName>CsharpConverterDLL</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\All\Documents\Visual Studio 2013\Projects\CONVERTER_PROJECT\CsharpConverterDLL\CsharpConverterDLL;C:\boost;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\boost\libs;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Users\All\Documents\Visual Studio 2013\Projects\CONVERTER_PROJECT\CsharpConverterDLL\CsharpConverterDLL;C:\boost;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\boost\libs;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;CONVERTERDLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalOptions>-D_SCL_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;CONVERTERDLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="converter_source\class_GrammarCompiler.h" />
+    <ClInclude Include="converter_source\class_Parser.h" />
+    <ClInclude Include="converter_source\class_ProgramCode.h" />
+    <ClInclude Include="converter_source\declarations\class_Decl.h" />
+    <ClInclude Include="converter_source\declarations\class_Declaration.h" />
+    <ClInclude Include="converter_source\declarations\class_FuncDef.h" />
+    <ClInclude Include="converter_source\expressions\class_AddExpr.h" />
+    <ClInclude Include="converter_source\expressions\class_AssignExpr.h" />
+    <ClInclude Include="converter_source\expressions\class_BwAndExpr.h" />
+    <ClInclude Include="converter_source\expressions\class_BwEorExpr.h" />
+    <ClInclude Include="converter_source\expressions\class_BwIorExpr.h" />
+    <ClInclude Include="converter_source\expressions\class_CondExpr.h" />
+    <ClInclude Include="converter_source\expressions\class_EquExpr.h" />
+    <ClInclude Include="converter_source\expressions\class_Expr.h" />
+    <ClInclude Include="converter_source\expressions\class_Expression.h" />
+    <ClInclude Include="converter_source\expressions\class_LogAndExpr.h" />
+    <ClInclude Include="converter_source\expressions\class_LogOrExpr.h" />
+    <ClInclude Include="converter_source\expressions\class_MultipExpr.h" />
+    <ClInclude Include="converter_source\expressions\class_PostfExpr.h" />
+    <ClInclude Include="converter_source\expressions\class_PrimaryExpr.h" />
+    <ClInclude Include="converter_source\expressions\class_RelatExpr.h" />
+    <ClInclude Include="converter_source\expressions\class_ShiftExpr.h" />
+    <ClInclude Include="converter_source\expressions\class_UnaryExpr.h" />
+    <ClInclude Include="converter_source\initialization\class_InitClause.h" />
+    <ClInclude Include="converter_source\initialization\class_Initialization.h" />
+    <ClInclude Include="converter_source\initialization\class_Initializer.h" />
+    <ClInclude Include="converter_source\initialization\class_InitList.h" />
+    <ClInclude Include="converter_source\other\class_ArrayPart.h" />
+    <ClInclude Include="converter_source\other\class_Idvar.h" />
+    <ClInclude Include="converter_source\other\class_TType.h" />
+    <ClInclude Include="converter_source\statements\class_CompStat.h" />
+    <ClInclude Include="converter_source\statements\class_ConsoleIOStat.h" />
+    <ClInclude Include="converter_source\statements\class_DeclStat.h" />
+    <ClInclude Include="converter_source\statements\class_DowhileStat.h" />
+    <ClInclude Include="converter_source\statements\class_ExprStat.h" />
+    <ClInclude Include="converter_source\statements\class_ForStat.h" />
+    <ClInclude Include="converter_source\statements\class_IfStat.h" />
+    <ClInclude Include="converter_source\statements\class_JumpStat.h" />
+    <ClInclude Include="converter_source\statements\class_LblStat.h" />
+    <ClInclude Include="converter_source\statements\class_Stat.h" />
+    <ClInclude Include="converter_source\statements\class_Statement.h" />
+    <ClInclude Include="converter_source\statements\class_SwitchStat.h" />
+    <ClInclude Include="converter_source\statements\class_WhileStat.h" />
+    <ClInclude Include="DLLHeader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="converter_source\class_GrammarCompiler.cpp" />
+    <ClCompile Include="converter_source\class_ProgramCode.cpp" />
+    <ClCompile Include="converter_source\declarations\cpp\class_Decl.cpp" />
+    <ClCompile Include="converter_source\declarations\cpp\class_FuncDef.cpp" />
+    <ClCompile Include="converter_source\expressions\cpp\class_AddExpr.cpp" />
+    <ClCompile Include="converter_source\expressions\cpp\class_AssignExpr.cpp" />
+    <ClCompile Include="converter_source\expressions\cpp\class_BwAndExpr.cpp" />
+    <ClCompile Include="converter_source\expressions\cpp\class_BwEorExpr.cpp" />
+    <ClCompile Include="converter_source\expressions\cpp\class_BwIorExpr.cpp" />
+    <ClCompile Include="converter_source\expressions\cpp\class_CondExpr.cpp" />
+    <ClCompile Include="converter_source\expressions\cpp\class_EquExpr.cpp" />
+    <ClCompile Include="converter_source\expressions\cpp\class_Expr.cpp" />
+    <ClCompile Include="converter_source\expressions\cpp\class_LogAndExpr.cpp" />
+    <ClCompile Include="converter_source\expressions\cpp\class_LogOrExpr.cpp" />
+    <ClCompile Include="converter_source\expressions\cpp\class_MultipExpr.cpp" />
+    <ClCompile Include="converter_source\expressions\cpp\class_PostfExpr.cpp" />
+    <ClCompile Include="converter_source\expressions\cpp\class_PrimaryExpr.cpp" />
+    <ClCompile Include="converter_source\expressions\cpp\class_RelatExpr.cpp" />
+    <ClCompile Include="converter_source\expressions\cpp\class_ShiftExpr.cpp" />
+    <ClCompile Include="converter_source\expressions\cpp\class_UnaryExpr.cpp" />
+    <ClCompile Include="converter_source\initialization\cpp\class_InitClause.cpp" />
+    <ClCompile Include="converter_source\initialization\cpp\class_Initializer.cpp" />
+    <ClCompile Include="converter_source\initialization\cpp\class_InitList.cpp" />
+    <ClCompile Include="converter_source\other\cpp\class_ArrayPart.cpp" />
+    <ClCompile Include="converter_source\other\cpp\class_Idvar.cpp" />
+    <ClCompile Include="converter_source\other\cpp\class_TType.cpp" />
+    <ClCompile Include="converter_source\statements\cpp\class_CompStat.cpp" />
+    <ClCompile Include="converter_source\statements\cpp\class_ConsoleIOStat.cpp" />
+    <ClCompile Include="converter_source\statements\cpp\class_DeclStat.cpp" />
+    <ClCompile Include="converter_source\statements\cpp\class_DowhileStat.cpp" />
+    <ClCompile Include="converter_source\statements\cpp\class_ExprStat.cpp" />
+    <ClCompile Include="converter_source\statements\cpp\class_ForStat.cpp" />
+    <ClCompile Include="converter_source\statements\cpp\class_IfStat.cpp" />
+    <ClCompile Include="converter_source\statements\cpp\class_JumpStat.cpp" />
+    <ClCompile Include="converter_source\statements\cpp\class_LblStat.cpp" />
+    <ClCompile Include="converter_source\statements\cpp\class_Stat.cpp" />
+    <ClCompile Include="converter_source\statements\cpp\class_SwitchStat.cpp" />
+    <ClCompile Include="converter_source\statements\cpp\class_WhileStat.cpp" />
+    <ClCompile Include="DLLSource.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
