@@ -32,7 +32,7 @@ Code converter *does not support*:
 - Passing parameters by pointer (passing reference by value applies instead)
 
 
-**Code example:**
+**C++ to Ruby code translation example:**
 
 C++
 ```cs
@@ -102,26 +102,26 @@ return 0
 **Screenshots:**
 
 Main window:
-![Main window](https://github.com/sp0wk/Cpp2CsharpRuby_CodeConverter/tree/master/screenshots/screen_main.png)
+![Main window](https://github.com/sp0wk/Cpp2CsharpRuby_CodeConverter/raw/master/screenshots/screen_main.png)
 
 Translation of functions:
-![functions](https://github.com/sp0wk/Cpp2CsharpRuby_CodeConverter/tree/master/screenshots/screen_functions.png)
+![functions](https://github.com/sp0wk/Cpp2CsharpRuby_CodeConverter/raw/master/screenshots/screen_functions.png)
 
 Translation of one function:
-![function](https://github.com/sp0wk/Cpp2CsharpRuby_CodeConverter/tree/master/screenshots/screen_function.png)
+![function](https://github.com/sp0wk/Cpp2CsharpRuby_CodeConverter/raw/master/screenshots/screen_function.png)
 
 Translation of var declarations:
-![vardecl1](https://github.com/sp0wk/Cpp2CsharpRuby_CodeConverter/tree/master/screenshots/screen_vardecl1.png)
-![vardecl2](https://github.com/sp0wk/Cpp2CsharpRuby_CodeConverter/tree/master/screenshots/screen_vardecl2.png)
+![vardecl1](https://github.com/sp0wk/Cpp2CsharpRuby_CodeConverter/raw/master/screenshots/screen_vardecl1.png)
+![vardecl2](https://github.com/sp0wk/Cpp2CsharpRuby_CodeConverter/raw/master/screenshots/screen_vardecl2.png)
 
 Translation of expressions:
-![expr](https://github.com/sp0wk/Cpp2CsharpRuby_CodeConverter/tree/master/screenshots/screen_expr.png)
+![expr](https://github.com/sp0wk/Cpp2CsharpRuby_CodeConverter/raw/master/screenshots/screen_expr.png)
 
 Translation of condition operator:
-![condition](https://github.com/sp0wk/Cpp2CsharpRuby_CodeConverter/tree/master/screenshots/screen_condition.png)
+![condition](https://github.com/sp0wk/Cpp2CsharpRuby_CodeConverter/raw/master/screenshots/screen_condition.png)
 
 Translation of loops:
-![loops](https://github.com/sp0wk/Cpp2CsharpRuby_CodeConverter/tree/master/screenshots/screen_loops.png)
+![loops](https://github.com/sp0wk/Cpp2CsharpRuby_CodeConverter/raw/master/screenshots/screen_loops.png)
 
 Translation of switch operator:
-![switch](https://github.com/sp0wk/Cpp2CsharpRuby_CodeConverter/tree/master/screenshots/screen_switch.png)
+![switch](https://github.com/sp0wk/Cpp2CsharpRuby_CodeConverter/raw/master/screenshots/screen_switch.png)
