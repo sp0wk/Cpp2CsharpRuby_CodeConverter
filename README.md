@@ -50,24 +50,24 @@ return b;
 
 int main() 
 {
-/* variables */
-string resultStr1 = "Max ";
-string& ref = resultStr1;
-string resultStr2 = "value is: ";
-string *ptr = &resultStr2;
-int x, y;
-
-//entering values
-cout << "Enter x: ";
-cin >> x;
-cout << "Enter y: ";
-cin >> y;
-
-//result
-cout << endl << ref + *ptr << findMax(x, y) << std::endl;
-std::cout << "Min: " << (x < y ? x : y) << endl;
-
-return 0;
+    /* variables */
+    string resultStr1 = "Max ";
+    string& ref = resultStr1;
+    string resultStr2 = "value is: ";
+    string *ptr = &resultStr2;
+    int x, y;
+    
+    //entering values
+    cout << "Enter x: ";
+    cin >> x;
+    cout << "Enter y: ";
+    cin >> y;
+    
+    //result
+    cout << endl << ref + *ptr << findMax(x, y) << std::endl;
+    std::cout << "Min: " << (x < y ? x : y) << endl;
+    
+    return 0;
 }
 ```
 
@@ -76,11 +76,11 @@ Ruby:
 require './help_methods.rb'
 
 def findMax (a, b)
-if notfalse(a >= b)
-return a
-else
-return b
-end
+    if notfalse(a >= b)
+        return a
+    else
+        return b
+    end
 end
 
 # MAIN
