@@ -32,8 +32,9 @@ ProgramCode::ProgramCode(GrammarCompiler* gc, string& cppcode_in)
 			sregex_iterator end;
 			for (sregex_iterator iter(cbegin(statements), cend(statements), gc->stat_space); iter != end; iter++) {
 				parser = new Stat(gc, ids, (*iter)[1].str(), 0);
-
 				csharp_code += parser->getCsharpCode();
+				delete parser;
+				parser = nullptr;
 			}
 		}
 		else if (regex_match(cppcode_in, m, gc->program_code)) {			// program code with functions
@@ -42,8 +43,9 @@ ProgramCode::ProgramCode(GrammarCompiler* gc, string& cppcode_in)
 			sregex_iterator end;
 			for (sregex_iterator iter(cbegin(functions), cend(functions), gc->func_def_spc); iter != end; iter++) {
 				parser = new FuncDef(gc, (*iter)[1].str());
-
 				csharp_code += parser->getCsharpCode();
+				delete parser;
+				parser = nullptr;
 			}
 		}
 
