@@ -13,258 +13,294 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Converter">
+      <UniqueIdentifier>{62127842-0c9f-4b8b-8611-53742f570c3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Converter\Declarations">
+      <UniqueIdentifier>{7947849f-a49a-415e-aa57-2970fcb0ebb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Converter\Expressions">
+      <UniqueIdentifier>{ff70ff48-b217-4bcb-97de-d1a653d23bd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Converter\Initialization">
+      <UniqueIdentifier>{b79f2a62-55ee-481e-8d6a-f94e47a9c39f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Converter\Other">
+      <UniqueIdentifier>{986ca67d-3536-414a-9026-9734791be95c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Converter\Statements">
+      <UniqueIdentifier>{4fd1c1bb-5943-4e6d-9565-fffb4cb01213}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Converter">
+      <UniqueIdentifier>{6ed8ca92-e022-4259-a2dc-577752951b5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Converter\Declarations">
+      <UniqueIdentifier>{1ff24bcd-57a9-4936-8f19-a800f81105f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Converter\Expressions">
+      <UniqueIdentifier>{395e49ab-ea9a-4878-9a15-8252445c6f57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Converter\Statements">
+      <UniqueIdentifier>{2972f6a7-28eb-4ea3-8f1f-bfb72e55ee7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Converter\Initialization">
+      <UniqueIdentifier>{f41130f5-643e-433f-a757-ede07fb4e0d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Converter\Other">
+      <UniqueIdentifier>{b3c74961-53e4-4739-b846-bf08f008731a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DLLHeader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="converter_source\class_GrammarCompiler.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="converter_source\class_ProgramCode.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="converter_source\class_Parser.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="converter_source\declarations\class_Decl.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Converter\Declarations</Filter>
     </ClInclude>
     <ClInclude Include="converter_source\declarations\class_Declaration.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Converter\Declarations</Filter>
     </ClInclude>
     <ClInclude Include="converter_source\declarations\class_FuncDef.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Converter\Declarations</Filter>
     </ClInclude>
     <ClInclude Include="converter_source\expressions\class_AddExpr.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Converter\Expressions</Filter>
     </ClInclude>
     <ClInclude Include="converter_source\expressions\class_AssignExpr.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Converter\Expressions</Filter>
     </ClInclude>
     <ClInclude Include="converter_source\expressions\class_BwAndExpr.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Converter\Expressions</Filter>
     </ClInclude>
     <ClInclude Include="converter_source\expressions\class_BwEorExpr.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Converter\Expressions</Filter>
     </ClInclude>
     <ClInclude Include="converter_source\expressions\class_BwIorExpr.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Converter\Expressions</Filter>
     </ClInclude>
     <ClInclude Include="converter_source\expressions\class_CondExpr.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Converter\Expressions</Filter>
     </ClInclude>
     <ClInclude Include="converter_source\expressions\class_EquExpr.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Converter\Expressions</Filter>
     </ClInclude>
     <ClInclude Include="converter_source\expressions\class_Expr.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Converter\Expressions</Filter>
     </ClInclude>
     <ClInclude Include="converter_source\expressions\class_Expression.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Converter\Expressions</Filter>
     </ClInclude>
     <ClInclude Include="converter_source\expressions\class_LogAndExpr.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Converter\Expressions</Filter>
     </ClInclude>
     <ClInclude Include="converter_source\expressions\class_LogOrExpr.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Converter\Expressions</Filter>
     </ClInclude>
     <ClInclude Include="converter_source\expressions\class_MultipExpr.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Converter\Expressions</Filter>
     </ClInclude>
     <ClInclude Include="converter_source\expressions\class_PostfExpr.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Converter\Expressions</Filter>
     </ClInclude>
     <ClInclude Include="converter_source\expressions\class_PrimaryExpr.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Converter\Expressions</Filter>
     </ClInclude>
     <ClInclude Include="converter_source\expressions\class_RelatExpr.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Converter\Expressions</Filter>
     </ClInclude>
     <ClInclude Include="converter_source\expressions\class_ShiftExpr.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Converter\Expressions</Filter>
     </ClInclude>
     <ClInclude Include="converter_source\expressions\class_UnaryExpr.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="converter_source\initialization\class_InitClause.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="converter_source\initialization\class_Initialization.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="converter_source\initialization\class_Initializer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="converter_source\initialization\class_InitList.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="converter_source\other\class_ArrayPart.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="converter_source\other\class_Idvar.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="converter_source\other\class_TType.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Converter\Expressions</Filter>
     </ClInclude>
     <ClInclude Include="converter_source\statements\class_CompStat.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="converter_source\statements\class_DeclStat.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="converter_source\statements\class_DowhileStat.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="converter_source\statements\class_ExprStat.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="converter_source\statements\class_ForStat.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="converter_source\statements\class_IfStat.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="converter_source\statements\class_JumpStat.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="converter_source\statements\class_LblStat.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="converter_source\statements\class_Stat.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="converter_source\statements\class_Statement.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="converter_source\statements\class_SwitchStat.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="converter_source\statements\class_WhileStat.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Converter\Statements</Filter>
     </ClInclude>
     <ClInclude Include="converter_source\statements\class_ConsoleIOStat.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Converter\Statements</Filter>
+    </ClInclude>
+    <ClInclude Include="converter_source\statements\class_DeclStat.h">
+      <Filter>Header Files\Converter\Statements</Filter>
+    </ClInclude>
+    <ClInclude Include="converter_source\statements\class_DowhileStat.h">
+      <Filter>Header Files\Converter\Statements</Filter>
+    </ClInclude>
+    <ClInclude Include="converter_source\statements\class_ExprStat.h">
+      <Filter>Header Files\Converter\Statements</Filter>
+    </ClInclude>
+    <ClInclude Include="converter_source\statements\class_ForStat.h">
+      <Filter>Header Files\Converter\Statements</Filter>
+    </ClInclude>
+    <ClInclude Include="converter_source\statements\class_IfStat.h">
+      <Filter>Header Files\Converter\Statements</Filter>
+    </ClInclude>
+    <ClInclude Include="converter_source\statements\class_JumpStat.h">
+      <Filter>Header Files\Converter\Statements</Filter>
+    </ClInclude>
+    <ClInclude Include="converter_source\statements\class_LblStat.h">
+      <Filter>Header Files\Converter\Statements</Filter>
+    </ClInclude>
+    <ClInclude Include="converter_source\statements\class_Stat.h">
+      <Filter>Header Files\Converter\Statements</Filter>
+    </ClInclude>
+    <ClInclude Include="converter_source\statements\class_Statement.h">
+      <Filter>Header Files\Converter\Statements</Filter>
+    </ClInclude>
+    <ClInclude Include="converter_source\statements\class_SwitchStat.h">
+      <Filter>Header Files\Converter\Statements</Filter>
+    </ClInclude>
+    <ClInclude Include="converter_source\statements\class_WhileStat.h">
+      <Filter>Header Files\Converter\Statements</Filter>
+    </ClInclude>
+    <ClInclude Include="converter_source\initialization\class_InitClause.h">
+      <Filter>Header Files\Converter\Initialization</Filter>
+    </ClInclude>
+    <ClInclude Include="converter_source\initialization\class_Initialization.h">
+      <Filter>Header Files\Converter\Initialization</Filter>
+    </ClInclude>
+    <ClInclude Include="converter_source\initialization\class_Initializer.h">
+      <Filter>Header Files\Converter\Initialization</Filter>
+    </ClInclude>
+    <ClInclude Include="converter_source\initialization\class_InitList.h">
+      <Filter>Header Files\Converter\Initialization</Filter>
+    </ClInclude>
+    <ClInclude Include="converter_source\other\class_Idvar.h">
+      <Filter>Header Files\Converter\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="converter_source\other\class_ArrayPart.h">
+      <Filter>Header Files\Converter\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="converter_source\other\class_TType.h">
+      <Filter>Header Files\Converter\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="converter_source\class_GrammarCompiler.h">
+      <Filter>Header Files\Converter</Filter>
+    </ClInclude>
+    <ClInclude Include="converter_source\class_Parser.h">
+      <Filter>Header Files\Converter</Filter>
+    </ClInclude>
+    <ClInclude Include="converter_source\class_ProgramCode.h">
+      <Filter>Header Files\Converter</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DLLSource.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="converter_source\class_GrammarCompiler.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="converter_source\class_ProgramCode.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="converter_source\declarations\cpp\class_Decl.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Converter\Declarations</Filter>
     </ClCompile>
     <ClCompile Include="converter_source\declarations\cpp\class_FuncDef.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Converter\Declarations</Filter>
     </ClCompile>
     <ClCompile Include="converter_source\expressions\cpp\class_AddExpr.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Converter\Expressions</Filter>
     </ClCompile>
     <ClCompile Include="converter_source\expressions\cpp\class_AssignExpr.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Converter\Expressions</Filter>
     </ClCompile>
     <ClCompile Include="converter_source\expressions\cpp\class_BwAndExpr.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Converter\Expressions</Filter>
     </ClCompile>
     <ClCompile Include="converter_source\expressions\cpp\class_BwEorExpr.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Converter\Expressions</Filter>
     </ClCompile>
     <ClCompile Include="converter_source\expressions\cpp\class_BwIorExpr.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Converter\Expressions</Filter>
     </ClCompile>
     <ClCompile Include="converter_source\expressions\cpp\class_CondExpr.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Converter\Expressions</Filter>
     </ClCompile>
     <ClCompile Include="converter_source\expressions\cpp\class_EquExpr.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Converter\Expressions</Filter>
     </ClCompile>
     <ClCompile Include="converter_source\expressions\cpp\class_Expr.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Converter\Expressions</Filter>
     </ClCompile>
     <ClCompile Include="converter_source\expressions\cpp\class_LogAndExpr.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Converter\Expressions</Filter>
     </ClCompile>
     <ClCompile Include="converter_source\expressions\cpp\class_LogOrExpr.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Converter\Expressions</Filter>
     </ClCompile>
     <ClCompile Include="converter_source\expressions\cpp\class_MultipExpr.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Converter\Expressions</Filter>
     </ClCompile>
     <ClCompile Include="converter_source\expressions\cpp\class_PostfExpr.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Converter\Expressions</Filter>
     </ClCompile>
     <ClCompile Include="converter_source\expressions\cpp\class_PrimaryExpr.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Converter\Expressions</Filter>
     </ClCompile>
     <ClCompile Include="converter_source\expressions\cpp\class_RelatExpr.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Converter\Expressions</Filter>
     </ClCompile>
     <ClCompile Include="converter_source\expressions\cpp\class_ShiftExpr.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Converter\Expressions</Filter>
     </ClCompile>
     <ClCompile Include="converter_source\expressions\cpp\class_UnaryExpr.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="converter_source\initialization\cpp\class_InitClause.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="converter_source\initialization\cpp\class_Initializer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="converter_source\initialization\cpp\class_InitList.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="converter_source\other\cpp\class_ArrayPart.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="converter_source\other\cpp\class_Idvar.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="converter_source\other\cpp\class_TType.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Converter\Expressions</Filter>
     </ClCompile>
     <ClCompile Include="converter_source\statements\cpp\class_CompStat.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="converter_source\statements\cpp\class_DeclStat.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="converter_source\statements\cpp\class_DowhileStat.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="converter_source\statements\cpp\class_ExprStat.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="converter_source\statements\cpp\class_ForStat.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="converter_source\statements\cpp\class_IfStat.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="converter_source\statements\cpp\class_JumpStat.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="converter_source\statements\cpp\class_LblStat.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="converter_source\statements\cpp\class_Stat.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="converter_source\statements\cpp\class_SwitchStat.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="converter_source\statements\cpp\class_WhileStat.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Converter\Statements</Filter>
     </ClCompile>
     <ClCompile Include="converter_source\statements\cpp\class_ConsoleIOStat.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Converter\Statements</Filter>
+    </ClCompile>
+    <ClCompile Include="converter_source\statements\cpp\class_DeclStat.cpp">
+      <Filter>Source Files\Converter\Statements</Filter>
+    </ClCompile>
+    <ClCompile Include="converter_source\statements\cpp\class_DowhileStat.cpp">
+      <Filter>Source Files\Converter\Statements</Filter>
+    </ClCompile>
+    <ClCompile Include="converter_source\statements\cpp\class_ExprStat.cpp">
+      <Filter>Source Files\Converter\Statements</Filter>
+    </ClCompile>
+    <ClCompile Include="converter_source\statements\cpp\class_ForStat.cpp">
+      <Filter>Source Files\Converter\Statements</Filter>
+    </ClCompile>
+    <ClCompile Include="converter_source\statements\cpp\class_IfStat.cpp">
+      <Filter>Source Files\Converter\Statements</Filter>
+    </ClCompile>
+    <ClCompile Include="converter_source\statements\cpp\class_JumpStat.cpp">
+      <Filter>Source Files\Converter\Statements</Filter>
+    </ClCompile>
+    <ClCompile Include="converter_source\statements\cpp\class_LblStat.cpp">
+      <Filter>Source Files\Converter\Statements</Filter>
+    </ClCompile>
+    <ClCompile Include="converter_source\statements\cpp\class_Stat.cpp">
+      <Filter>Source Files\Converter\Statements</Filter>
+    </ClCompile>
+    <ClCompile Include="converter_source\statements\cpp\class_SwitchStat.cpp">
+      <Filter>Source Files\Converter\Statements</Filter>
+    </ClCompile>
+    <ClCompile Include="converter_source\statements\cpp\class_WhileStat.cpp">
+      <Filter>Source Files\Converter\Statements</Filter>
+    </ClCompile>
+    <ClCompile Include="converter_source\initialization\cpp\class_InitClause.cpp">
+      <Filter>Source Files\Converter\Initialization</Filter>
+    </ClCompile>
+    <ClCompile Include="converter_source\initialization\cpp\class_Initializer.cpp">
+      <Filter>Source Files\Converter\Initialization</Filter>
+    </ClCompile>
+    <ClCompile Include="converter_source\initialization\cpp\class_InitList.cpp">
+      <Filter>Source Files\Converter\Initialization</Filter>
+    </ClCompile>
+    <ClCompile Include="converter_source\other\cpp\class_ArrayPart.cpp">
+      <Filter>Source Files\Converter\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="converter_source\other\cpp\class_Idvar.cpp">
+      <Filter>Source Files\Converter\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="converter_source\other\cpp\class_TType.cpp">
+      <Filter>Source Files\Converter\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="converter_source\class_GrammarCompiler.cpp">
+      <Filter>Source Files\Converter</Filter>
+    </ClCompile>
+    <ClCompile Include="converter_source\class_ProgramCode.cpp">
+      <Filter>Source Files\Converter</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

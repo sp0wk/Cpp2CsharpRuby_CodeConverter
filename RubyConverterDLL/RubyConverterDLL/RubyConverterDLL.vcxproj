@@ -42,12 +42,12 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\All\Documents\Visual Studio 2013\Projects\ConverterDLL\ConverterDLL;C:\boost;C:\Users\All\Documents\Visual Studio 2013\Projects\ConverterDLL\ConverterDLL\converter_source;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir);C:\boost;$(IncludePath)</IncludePath>
     <LibraryPath>C:\boost\libs;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>C:\Users\All\Documents\Visual Studio 2013\Projects\CONVERTER_PROJECT\RubyConverterDLL\RubyConverterDLL;C:\boost;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir);C:\boost;$(IncludePath)</IncludePath>
     <LibraryPath>C:\boost\libs;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">

@@ -33,7 +33,7 @@ bool TMainForm::testSaved()
 {
 	int ans = 0;
 	if (currentCppFile != "" && cppFileSaved == false) {
-		ans = MessageBox(NULL, L"Файл с кодом С++ не сохранён. Сохранить?", L"Сохранить", MB_YESNOCANCEL);
+		ans = MessageBox(NULL, L"File with С++ code is not saved. Save it?", L"Save", MB_YESNOCANCEL);
 		switch (ans) {
 			case IDYES: {
 				CppEdit->Lines->SaveToFile(currentCppFile);
@@ -73,7 +73,7 @@ UnicodeString TMainForm::convertCode(UnicodeString code = "")
 			result = (char*)convertFunc(&convertStr);
 		}
 		else {
-			ShowMessage("Библиотека конвертера C# не найдена!");
+			ShowMessage("C# converter DLL not found!");
 			this->Close();
 		}
 	}
@@ -90,12 +90,12 @@ UnicodeString TMainForm::convertCode(UnicodeString code = "")
 			result = (char*)convertFunc(&convertStr);
 		}
 		else {
-			ShowMessage("Библиотека конвертера Ruby не найдена!");
+			ShowMessage("Ruby converter DLL not found!");
 			this->Close();
 		}
 	}
 	else {
-		 MessageBox(NULL, L"Сперва необходимо выбрать режим", L"Режим не выбран", MB_OK + MB_ICONWARNING);
+		 MessageBox(NULL, L"Select output language first", L"Mode not selected", MB_OK + MB_ICONWARNING);
 	}
 
 	return result;
@@ -113,7 +113,7 @@ void TMainForm::convertAll()
 		ConvEdit->Lines->Text = require + convertCode(CppEdit->Lines->Text);
 	}
 	else {
-		 MessageBox(NULL, L"Сперва необходимо выбрать режим", L"Режим не выбран", MB_OK + MB_ICONWARNING);
+		 MessageBox(NULL, L"Select output language first", L"Mode not selected", MB_OK + MB_ICONWARNING);
 	}
 }
 
@@ -125,7 +125,7 @@ void TMainForm::convertToClipboard(UnicodeString code)
 	Clipboard()->AsText = converted;
 
 	if (!Clipboard()->HasFormat(CF_TEXT)) {
-		MessageBox(NULL, L"Ошибка при копировании в буфер", L"Ошибка", MB_OK + MB_ICONERROR);
+		MessageBox(NULL, L"Error occured while trying to copy to clipboard", L"Clipboard error", MB_OK + MB_ICONERROR);
 	}
 }
 
@@ -392,13 +392,13 @@ try {
 					command = " /k \"" + ruby_compiler + " " + ruby_param + "\"";
 					break;
 			}
-			default: MessageBox(NULL, L"Сперва необходимо выбрать режим", L"Режим не выбран", MB_OK + MB_ICONWARNING);
+			default: MessageBox(NULL, L"Select output language first", L"Mode not selected", MB_OK + MB_ICONWARNING);
 		}
 		// execute compiling
 		ShellExecute(Handle, NULL, L"cmd.exe", command.w_str(), NULL, SW_SHOW);
 	}
 	else {
-		if (MessageBox(NULL, L"Сперва необходимо сохранить файл. Сохранить?", L"Предупреждение", MB_YESNO) == IDYES) {
+		if (MessageBox(NULL, L"You have to save file first. Save it?", L"Warning", MB_YESNO) == IDYES) {
 			ConvSaveDlg->Execute();
 		}
 	}
@@ -438,7 +438,7 @@ try {
 		ShellExecute(Handle, NULL, L"cmd.exe", command.w_str(), NULL, SW_SHOW);
 	}
 	else {
-		if (MessageBox(NULL, L"Сперва необходимо сохранить файл. Сохранить?", L"Предупреждение", MB_YESNO) == IDYES) {
+		if (MessageBox(NULL, L"You have to save file first. Save it?", L"Warning", MB_YESNO) == IDYES) {
 			SaveFileDlg->Execute();
 		}
 	}
@@ -514,11 +514,10 @@ void __fastcall TMainForm::FontDialog1Apply(TObject *Sender, HWND Wnd)
 
 void __fastcall TMainForm::mAboutClick(TObject *Sender)
 {
-MessageBox(NULL, L"Название:  C++ To C#/Ruby Code Converter\n"
-	L"Версия:   1.00\n\n"
-	L"Автор программы:   Волошин Дмитрий \n\n"
-	L"© ДНУЖТ, 2016"
-, L"О программе", MB_OK);
+MessageBox(NULL, L"C++ To C#/Ruby Code Converter\n"
+	L"Version:   1.00\n\n"
+	L"Author:   Voloshyn Dmitriy \n\n"
+, L"About", MB_OK);
 }
 //---------------------------------------------------------------------------
 
